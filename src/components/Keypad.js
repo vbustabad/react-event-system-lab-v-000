@@ -1,14 +1,14 @@
 import React from 'react';
 
 class Keypad extends React.Component {
- 
+
   tickle = () => {
-    console.log('Tee hee!');
+    console.log('Entering password...');
   }
- 
+
   render() {
     return (
-      <button>Tickle me!</button>
+      <input type="password" onKeyUp={this.tickle}></input>
     );
   }
 }
